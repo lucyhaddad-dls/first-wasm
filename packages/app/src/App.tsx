@@ -5,6 +5,7 @@ function App() {
 
     const jsResult:string = testJs();
     const wasmResult:string = wasm_hello()
+    alert_fn()
 
     return (
         <Stack>
@@ -14,9 +15,6 @@ function App() {
         </Stack>
         <Stack>
             Test wasm: {wasmResult}
-        </Stack>
-        <Stack>
-            {alert_fn()}
         </Stack>
         </Stack>
 
