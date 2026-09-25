@@ -15,4 +15,7 @@ Run `wasm-pack build --target web` <br>
 This compiles the code to webassembly, generates js files and a pkg directory. <br>
 
 ### vite:
-Run: `wasm-pack build --out-dir packages/library/wasm --out-name index`
+Run: `wasm-pack build --out-dir packages/library/wasm --out-name index`, <br>
+add package.json files to library, app and root then run `pnpm install`. <br>
+
+Create vite.config.ts file in library + app ( had to run `pnpm -i --save-dev @types/node` and `pnpm approve-builds` to get `path` import working).
