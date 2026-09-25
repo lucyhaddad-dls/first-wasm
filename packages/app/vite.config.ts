@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import wasm from 'vite-plugin-wasm'
-import react from `@vitejs/plugin-react`
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     plugins: [wasm(), react()],
+    base: "/",
     build: {
         outDir: 'dist',
         rollupOptions: {
@@ -18,5 +19,6 @@ export default defineConfig({
     },
     optimizeDeps: {
         exclude: ["workspace/library"]
-    }
+    },
+  
 })

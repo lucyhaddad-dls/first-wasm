@@ -19,3 +19,7 @@ Run: `wasm-pack build --out-dir packages/library/wasm --out-name index`, <br>
 add package.json files to library, app and root then run `pnpm install`. <br>
 
 Create vite.config.ts file in library + app ( had to run `pnpm -i --save-dev @types/node` and `pnpm approve-builds` to get `path` import working).
+
+### running:
+`pnpm install` in root directory, then `pnpm run test-dev` should work. <br>
+If the page hangs in the browser try forcing a different host e.g. `pnpm run test-dev --host 127.0.0.1`.
