@@ -9,7 +9,9 @@ function App() {
 
     return (
         <Stack>
-            Hi this is a test web app for using wasm!
+            Hi this is a test web app for using wasm! <br>
+            </br> 
+            Will it update? YES!
         <Stack>
             Test Js: {jsResult}
         </Stack>
