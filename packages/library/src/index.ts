@@ -1,9 +1,11 @@
-import { wasm_hello } from "../wasm/index"
 
 const testJs = (): string => {
     return "Hi from js!"
 }
 
 export {
-  testJs, wasm_hello
+  testJs
 }
+export {
+  wasm_hello, alert_fn
+} from "../wasm/index"

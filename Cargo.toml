@@ -6,9 +6,18 @@ authors = ["Lucy Haddad l.haddad@diamond.ac.uk"]
 description = "An example project with wasm-pack"
 repository = "https://github.com/lucyhaddad-dls/first-wasm"
 
+[features]
+default = ["console_error_panic_hook"]
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2"
+
+# allows for easier debugging (but increases pkg size)
+console_error_panic_hook = { version = "0.1.1", optional = true }
+
+# `wee_alloc` requires nightly Rust when targeting wasm ?
+# so i'm commenting it out for now
+# wee_alloc = { version = "0.4.2", optional = true }
