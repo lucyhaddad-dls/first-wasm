@@ -12,7 +12,7 @@ wasm-bindgen = "0.2"
 
 ### wasm-pack:
 Run `wasm-pack build --target web` <br>
-This compiles the code to webassembly, generates js files and a pkg directory.
-
+This compiles the code to webassembly, generates js files and a pkg directory. <br>
 
 ### vite:
+Run: `wasm-pack build --out-dir packages/library/wasm --out-name index`
