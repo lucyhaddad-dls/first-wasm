@@ -1,0 +1,19 @@
+<!-- an example file using the pkg -->
+<!doctype html>
+<html lang="en-UK">
+    <head>
+        <meta charset="utf-8"/>
+        <title>WASM EXAMPLE</title>
+    </head>
+    <body>
+        <script type=""module>
+            import {say_hello, say_hello_again} from "./pkg.first_wasm.js";
+            init().then(() => {
+                {say_hello("person"); say_hello_again()}
+            })
+            
+        </script>
+
+    </body>
+
+</html>

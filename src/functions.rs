@@ -7,11 +7,11 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn sayHello(name: &str) {
+pub fn say_hello(name: &str) {
     alert(&format!("Hi {} !!", name));
 }
 
 #[wasm_bindgen]
-pub fn sayHelloAgain() -> String {
+pub fn say_hello_again() -> String {
     "Hi from wasm!".to_string()
 }
