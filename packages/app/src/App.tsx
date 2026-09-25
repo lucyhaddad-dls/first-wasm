@@ -8,10 +8,10 @@ function App() {
     // alert_fn()
 
     return (
-        <Stack>
+        <Stack spacing={2}>
             Hi this is a test web app for using wasm! <br>
             </br> 
-            Will it update? YES!
+        
         <Stack>
             Test Js: {jsResult}
         </Stack>
