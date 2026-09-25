@@ -2,3 +2,5 @@
 .pnpm*
 node_modules/
 dist
+~/
+pnpm-lock
