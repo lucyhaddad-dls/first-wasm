@@ -1,4 +1,4 @@
-use wasm_bindgen::prelude::*
+use wasm_bindgen::prelude::*;
 
 // extern says use external function (alert from js!)
 #[wasm_bindgen]
